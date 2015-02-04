@@ -1,0 +1,14 @@
+{
+    "name": "Tip Calculator",
+    "description": "Easily calculate the tip for your bill.",
+    "launch_path": "/index.html",
+    "icons": {
+        "512": "/icons/icon-512.png",
+        "128": "/icons/icon-128.png"
+    },
+    "developer": {
+        "name": "Greyson Parrelli",
+        "url": "http://greysonparrelli.com"
+    },
+    "default_locale": "en"
+}

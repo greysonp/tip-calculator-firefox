@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Tip Calculator</title>
+        <link rel="stylesheet" type="text/css" href="./bower_components/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="./bower_components/bootstrap/dist/css/bootstrap-theme.min.css" />
+        <link rel="stylesheet" type="text/css" href="./css/style.css" />
+        
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="#">Tip Calculator</a>
+            </div>
+        </nav>
+
+        <div class="container">
+
+            <h4>Bill Amount</h4>
+            <div class="input-group input-group-lg">
+                <input id="js-bill-amount" type="number" class="form-control" placeholder="Bill Amount" aria-describedby="sizing-addon1" value="10.00">
+            </div>
+
+            <h4>Tip Percentage</h4>
+            <div class="btn-group" data-toggle="buttons">
+                <label class="btn btn-default">
+                    <input type="radio" name="inputWalls" id="inputWalls" value="5">
+                    5% 
+                </label>
+                <label class="btn btn-default">
+                    <input type="radio" name="inputWalls" id="inputWalls" value="10">
+                    10% 
+                </label>
+                <label class="btn btn-default active">
+                    <input type="radio" name="inputWalls" id="inputWalls" value="15" checked>
+                    15% 
+                </label>
+                <label class="btn btn-default">
+                    <input type="radio" name="inputWalls" id="inputWalls" value="20">
+                    20% 
+                </label>
+                <label class="btn btn-default">
+                    <input type="radio" name="inputWalls" id="inputWalls" value="other">
+                    Other 
+                </label>
+            </div>
+            
+            <div id="js-custom-tip" class="input-group input-group-lg hidden">
+                <input id="js-bill-amount" type="number" class="form-control" placeholder="Bill Amount" aria-describedby="sizing-addon1" value="12">
+                <span class="input-group-addon">%</span>
+            </div>
+
+
+            <h4>Tip Amount</h4>
+            <div class="input-group input-group-lg">
+                <input id="js-tip-amount" type="number" class="form-control" placeholder="Bill Amount" aria-describedby="sizing-addon1" value="3.50" disabled>
+            </div>
+
+            <h4>Total Bill</h4>
+            <div class="input-group input-group-lg">
+                <input id="js-total-bill" type="number" class="form-control final-bill" placeholder="Bill Amount" aria-describedby="sizing-addon1" value="3.50" disabled>
+            </div>
+
+        </div>
+
+        <script type="text/javascript" src="./bower_components/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="./bower_components/sprintf/dist/sprintf.min.js"></script>
+        <script type="text/javascript" src="./js/main.js"></script>
+    </body>
+</html>
